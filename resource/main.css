@@ -1,102 +1,165 @@
-
-body {
-	font-family: 'Nunito','Source Sans Pro', arial, sans-serif;
-    color: #fff;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
 html,
 body {
-    height: 100%
+	font-family: 'Vollkorn','Nunito','Source Sans Pro', arial, sans-serif;
+    color: #444;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.7em;
 }
 
 
-.wrapper {
-	border-top: 5px #232a35 solid;
+.box {
+	width: 100%;
 	text-align: center;
 }
-.block1 {
-	margin: 0 3em 0 3em;
+.box-in {
+	margin-left: 4em;
+	margin-right: 4em;
+	background-color1: #333;
+	height: 100%;
+	max-width: 1200px;	
 }
-.part1 {
+.bgc1 {
+	background-color: #f4f2ed;
+}
+.bgc2 {
+	background-color: #f4f4f4;
+}
+.bgc3 {
+	background-color: #663399;
+	color: #fff;
+}
+.left {
+	text-align: left;
+}
+.pt {	/** padding top **/
+	padding-top: 30px;
+}
+.pt1 {
+	padding-top: 80px;
+}
+.pb {	/** padding top **/
+	padding-bottom: 100px;
+}
+.pt2 {
+	padding-top: 30px;
+}
+.pb2 {
+	padding-bottom: 20px;
+}
+
+.mt1 {
+	padding-top: 150px;
+}
+.title1 {
+	font-size: 1.2em;
+	font-family: 'Pacifico';
+	margin-left: 0.5em;
+	line-height: 60px;
+}
+.title2 {
+	font-size: 4em;
+}
+.title3 {
+	font-size: 2.5em;
+	padding-bottom: 30px;
+}
+.text1 {
+	font-size: 1.5em;
+}
+.label {
+	font-size: 1.0em;
+}
+.nav1 {
+	list-style: none;
+}
+.nav1 li {
+	float: left;
+	line-height: 60px;
+	margin: 0 1em 0 1em;
+	font-size: 1.1em;
+}
+.nav li:hover {
+	cursor: pointer;
+	text-decoration-line: solid;
+}
+
+.jumbotron-img {
 	height: 600px;
+	border-top: 5px #000 solid;
 	background-size: 100% auto;
 	background-color: #000;
 	background-image: url('http://www.uprank.io/assets/images/hero.jpg');
 	overflow: hidden;
 	position: relative;
 }
-.part2 {
+.jumbotron-in {
 	background-color:rgba(0,0,0,0.65);
 	height: 600px;
-}
-#header {
-	width: 99%;
-	padding: 2em 2em 2em 2em;
-}
-.header-title {
-	font-family: 'Pacifico', cursive;
-	color: white;
-	font-weight: ;
-	font-size: 1.6em; 
-}
-.title1 {
-	font-size: 4em;
-}
-.container-1 {
-	text-align: center;
-	padding-top: 120px;
+	color: #fff;
 }
 .photo {
 	border-radius: 30%; height: 60px; 
 	border: 3px solid #000;
 }
-.under-block {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	color: #333;
+.photo2 {
+	width: 400px;
+	margin-top: 20px;
 }
-.subtitle1 {
-	padding: 1em;
-	font-size: 2.5em;
+.email-ico {
+	font-size: 2em;
+	margin-top: -20px;
+	color: #fff;
 }
 
-@media screen and (max-width: 1020px) {
-	.part1,.part2 {
-		height: 500px;
-	}
-	.container-1 {
-		padding-top: 90px;
-	}
+@media screen and (max-width: 1200px) {
+
 }
 
-@media screen and (max-width: 860px) {
-	.part1,.part2 {
-		height: 400px;
+@media screen and (max-width: 992px) {
+	.jumbotron-img {
+		background-size: auto 100%;
 	}
-	.container-1 {
-		padding-top: 30px;
+	.photo2 {
+		width: 300px;
+		margin-top: 40px;
 	}
+
 }
 
-@media screen and (max-width: 670px) {
-	.part1,.part2 {
-		height: 400px;
-	}
-	.container-1 {
-		padding-top: 30px;
-	}
-	.part1 {
-		background-image: url('http://www.uprank.io/assets/images/hero.jpg');
-		background-size: auto 500px;
-    	background-repeat: no-repeat;
-	}
+@media screen and (max-width: 768px) {
 	body {
-		background: red;
+		background: #333;
+	}
+	.jumbotron-img {
+		background-size: auto 100%;
+	}
+	.t1 {
+
+	}
+	.p1 {
+
+	}
+	.left {
+		text-align: center;
+	}
+	.nav1 {
+		display: none;
+	}
+	.box-in {
+		margin-left: 2em;
+		margin-right: 2em;
 	}
 }
 
-
+@media screen and (max-width: 648px) {
+	.photo2 {
+		width: 200px;
+		margin-top: 20px;
+	}
+	.box-in {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
