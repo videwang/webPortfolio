@@ -113,11 +113,25 @@ body {
 	color: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+	.jumbotron-img {
+		background-size: auto 100%;
+	}
+	.photo2 {
+		width: 300px;
+		margin-top: 40px;
+	}
+
+}
+
 @media screen and (max-width: 768px) {
 	body {
 		background: #333;
 	}
-
 	.jumbotron-img {
 		background-size: auto 100%;
 	}
@@ -133,14 +147,19 @@ body {
 	.nav1 {
 		display: none;
 	}
-}
-
-@media screen and (max-width: 992px) {
-	.jumbotron-img {
-		background-size: auto 100%;
+	.box-in {
+		margin-left: 2em;
+		margin-right: 2em;
 	}
 }
 
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 648px) {
+	.photo2 {
+		width: 200px;
+		margin-top: 20px;
+	}
+	.box-in {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 }
