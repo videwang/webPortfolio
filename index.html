@@ -4,7 +4,7 @@
   	<meta charset=“UTF-8”>
   	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link href='https://fonts.googleapis.com/css?family=Nunito|Pacifico|Vollkorn:400,300' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css'>
   	<title>Zhe Wang - HomePage</title>
   	<!-- Latest compiled and minified CSS -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -14,38 +14,47 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<!-- Latest compiled and minified JavaScript -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="./resource/main.js?v=0.1"></script>
   </head>
 
 
   <body>
+  <div id="side-menu">
+    <div id="side-menu-in"></div>
+  </div>
+
+  <div class="wrapper" id="home">
     <!-- jumbotron -->
     <div class="box jumbotron-img">
     <div class="jumbotron-in">
       <div class="box-in pt">
       <!-- nav line -->
       <div class="row left">
-        <div class="col-xs-12 col-sm-3">
+        <div class="col-xs-11 col-sm-6 col-md-3">
           <img class="photo p1" src="./resource/photo_1.jpg">
-          <span class="title1 t1">Zhe Wang</span>
+          <span class="title1 t1">ZHE WANG</span>
         </div>
-        <div class="col-xs-12 col-sm-9">
-          <nav class="nav1">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Skills</li>
-            <li>Education</li>
-            <li>Experience</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+        <div id="nav-content" class="col-xs-1 col-sm-6 col-md-9">
+          <nav id="nav1" class="nav1">
+            <li><a href="./#home">Home</a></li>
+            <li><a href="./#profile">Profile</a></li>
+            <li><a href="./#technicalSkills">Skills</a></li>
+            <li><a href="./#education">Education</a></li>
+            <li><a href="./#experience">Experience</a></li>
+            <li><a href="./#portfolio">Portfolio</a></li>
+            <li><a href="./#contact">Contact</a></li>
           </nav>
-
-          
+          <div class="menu-button">
+            <span id="menu-button" class="glyphicon glyphicon-menu-hamburger"></span>
+            
+          </div>
         </div>
+        
       </div>
       <section class="mt1">
-        <h1 class="title2">Zhe Wang</h1>
+        <h1 class="title2">ZHE WANG</h1>
         <p class="text1">
-          Professional Developer
+          PROFESSIONAL WEB DEVELOPER
         </p>
       </section>
       <!-- nav line end -->
@@ -54,10 +63,10 @@
     </div>
     <!-- jumbotron end -->
     <!-- profile -->
-    <div class="box">
+    <div class="box" id="profile">
       <div class="box-in pt1 pb">
         <h2 class="title3"><span style="color: #336699">P</span>rofile</h2>
-        <p>
+        <p class="label-container">
           <span class="label label-default">PHP</span>
           <span class="label label-primary">HTML5</span>
           <span class="label label-success">CSS</span>
@@ -69,7 +78,7 @@
     </div>
     <!-- profile end -->
     <!-- Technical Skills -->
-    <div class="box bgc2">
+    <div class="box bgc2" id="technicalSkills">
       <div class="box-in pt1 pb">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
@@ -77,13 +86,13 @@
           </div>
           <div class="col-xs-12 col-sm-6">
             <h2 class="title3"><span style="color: #33cc99">T</span>echnical <span style="color: #33cc99">S</span>kills</h2>
-            <p>
+            <p class="label-container">
               <span class="label label-default">PHP</span>
               <span class="label label-primary">HTML5</span>
               <span class="label label-success">CSS</span>
               <span class="label label-info">JQuery</span>
               <span class="label label-warning">JS</span>
-              <span class="label label-danger">Swift</span><br/><br/>
+              <span class="label label-danger">Swift</span>
               <span class="label label-primary">HTML5</span>
               <span class="label label-success">CSS</span>
               <span class="label label-info">JQuery</span>
@@ -95,7 +104,7 @@
     </div>
     <!-- Technical Skills end -->
     <!-- Education -->
-    <div class="box">
+    <div class="box" id="education">
       <div class="box-in pt1 pb">
         <h2 class="title3"><span style="color: #ffcc33">E</span>ducation</h2>
         <div class="row">
@@ -112,7 +121,7 @@
     </div>
     <!-- Education end -->
     <!-- Experience -->
-    <div class="box bgc1">
+    <div class="box bgc1" id="experience">
       <div class="box-in pt1 pb">
         <h2 class="title3"><span style="color: #99cc33">E</span>xperience</h2>
         <div class="row">
@@ -133,7 +142,7 @@
     </div>
     <!-- Experience end -->
     <!-- Portfolio -->
-    <div class="box">
+    <div class="box" id="portfolio">
       <div class="box-in pt1 pb">
         <h2 class="title3"><span style="color: #ff6666">P</span>ortfolio</h2>
         <div class="row">
@@ -144,7 +153,7 @@
                 <h3>Protfolio</h3>
                 <p>...</p>
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#portfolio1">
-                  Launch demo modal
+                  Detail
                 </button>
               </div>
             </div>
@@ -157,7 +166,7 @@
                 <h3>Protfolio</h3>
                 <p>...</p>
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#portfolio1">
-                  Launch demo modal
+                  Detail
                 </button>
               </div>
             </div>
@@ -170,7 +179,7 @@
                 <h3>Protfolio</h3>
                 <p>...</p>
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#portfolio1">
-                  Launch demo modal
+                  Detail
                 </button>
               </div>
             </div>
@@ -183,7 +192,7 @@
                 <h3>Protfolio</h3>
                 <p>...</p>
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#portfolio1">
-                  Launch demo modal
+                  Detail
                 </button>
               </div>
             </div>
@@ -193,7 +202,7 @@
     </div>
     <!-- Portfolio end -->
     <!-- Contact -->
-    <div class="box bgc3">
+    <div class="box bgc3" id="contact">
       <div class="box-in pt2 pb2">
         
         <h2 class="title3"><span style="color: #0099cc">G</span>et In Touch </h2>
@@ -203,9 +212,13 @@
       </div>
     </div>
     <!-- Contact end -->
+  </div>
 
-
-
+  <a href="./#home">
+  <div class="totop">
+    <span class="glyphicon glyphicon-triangle-top"></span>
+  </div>
+  </a>
   </body>
 
 
